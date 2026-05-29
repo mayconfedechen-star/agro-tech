@@ -75,3 +75,22 @@
     <p>Esses ensaios ajudam produtores a tomar decisões mais assertivas, aumentando a eficiência da produção e reduzindo riscos.</p>
   </div>
 </section><section id="
+
+ <h1>Inscrição para o Evento</h1>
+
+   <form action="#" method="post">
+ <!-- Campo Nome -->
+  <label for="nome">Nome:</label>
+   <input type="text" id="nome" name="nome" placeholder="maycon" required>
+
+  <!-- Campo E-mail -->
+  <label for="email">E-mail:</label>
+   <input type="email" id="email" name="email" placeholder="mm @may.com" required>
+
+   <!-- Campo Telefone -->
+  <label for="telefone">Telefone:</label>
+  <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXX-XXXX" required>
+
+ <!-- Campo Mensagem -->
+   <label for="mensagem">Mensagem:</label>
+   <textarea id="mensagem" name="mensagem" rows="5" placeholder="oi, eu sou o maycon"></textarea>
