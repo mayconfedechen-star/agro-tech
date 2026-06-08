@@ -94,3 +94,23 @@
  <!-- Campo Mensagem -->
    <label for="mensagem">Mensagem:</label>
    <textarea id="mensagem" name="mensagem" rows="5" placeholder="oi, eu sou o maycon"></textarea>
+
+<meta charset="UTF-8">
+ <title>Horário de Funcionamento</title>
+<style>
+ table {
+  width: 100%;
+ border-collapse: collapse; /* Une as bordas */
+ font-family: Arial, sans-serif;
+ }
+th, td {
+ border: 1px solid #dddddd;
+padding: 8px;
+text-align: left;
+  }
+th {
+background-color: #f2f2f2;
+ }
+ </style>
+</head>
+<body>
