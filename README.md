@@ -112,6 +112,6 @@ th {
 background-color: #f2f2f2;
  }
  </style>
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/RGCLG7GmEGI?si=KJtnI5wlq_l_8nvh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14511.735202110038!2d-52.28882953307229!3d-24.59148074969135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eddbf8811d649d%3A0x7b5fc5cca0c1b0cb!2sRoncador%2C%20PR%2C%2087320-000!5e0!3m2!1spt-BR!2sbr!4v1781524035088!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </head>
 <body>
