@@ -142,7 +142,7 @@ background-color: #f2f2f2;
         <input type="text" id="usuario" placeholder="Usuário"
                style="width:90%;padding:10px;margin:10px 0;"><br>
 
-<input type="password" id="123" placeholder="Senha"
+<input type="password" id="senha" placeholder="Senha"
                style="width:90%;padding:10px;margin:10px 0;"><br>
 
 <button onclick="entrar()"
