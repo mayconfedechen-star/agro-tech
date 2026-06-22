@@ -95,10 +95,10 @@ z-index:9999;">  <div style="
   text-align:center;
   width:300px;"><h2>Identificação</h2>
 
-<input type="text" id="maycon" placeholder="maycon"
+<input type="text" id="usuário" placeholder="usuário"
 style="width:90%;padding:10px;margin:10px 0;">
 
-<input type="password" id="12345" placeholder="12345"
+<input type="password" id="senha" placeholder="senha"
 style="width:90%;padding:10px;margin:10px 0;">
 
 <button onclick="entrar()"
@@ -107,6 +107,9 @@ style="padding:10px 20px;background:#2e7d32;color:white;border:none;border-radiu
 </button>
 
 <p id="erro" style="color:red;"></p>
+if(usuario === "admin" && senha === "1234"){
+    document.getElementById("loginBox").style.display = "none";
+}
 
   </div>
 </div><script>
