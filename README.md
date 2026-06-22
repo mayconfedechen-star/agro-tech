@@ -95,10 +95,10 @@ z-index:9999;">  <div style="
   text-align:center;
   width:300px;"><h2>Identificação</h2>
 
-<input type="text" id="maycon" placeholder="Usuário"
+<input type="text" id="maycon" placeholder="maycon"
 style="width:90%;padding:10px;margin:10px 0;">
 
-<input type="password" id="12345" placeholder="Senha"
+<input type="password" id="12345" placeholder="12345"
 style="width:90%;padding:10px;margin:10px 0;">
 
 <button onclick="entrar()"
