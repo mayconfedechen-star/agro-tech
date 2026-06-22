@@ -57,6 +57,7 @@
   <div class="card">
     <h2>O que é Agro Tech?</h2>
     <p>Agro Tech é o uso de tecnologia no agronegócio para aumentar a produtividade, reduzir custos e melhorar a qualidade das produções agrícolas.</p>
+    <img src="https://aegro.com.br/images/blog/geradas/agricultura-digital-ferramentas-tendencias-e-desafios-para-o-produtor-rural.webp" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 1920px; height: 217px; margin: 0px; width: 385px;" alt="Agricultura Digital: Ferramentas, Tendências e Desafios Para o Produtor  Rural | Blog da Aegro" jsname="kn3ccd">
   </div>
 </section><section id="ensaios">
   <div class="card">
