@@ -56,13 +56,14 @@
 </nav><section id="sobre">
   <div class="card">
     <h2>O que é Agro Tech?</h2>
-    <p>Agro Tech é o uso de tecnologia no agronegócio para aumentar a produtividade, reduzir custos e melhorar a qualidade das produções agrícolas.</p>
-    <img src="https://aegro.com.br/images/blog/geradas/agricultura-digital-ferramentas-tendencias-e-desafios-para-o-produtor-rural.webp" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 1920px; height: 217px; margin: 0px; width: 385px;" alt="Agricultura Digital: Ferramentas, Tendências e Desafios Para o Produtor  Rural | Blog da Aegro" jsname="kn3ccd">
+    <p>Agro Tech é o uso de tecnologia no agronegócio para aumentar a produtividade, reduzir custos e melhorar a qualidade das produções agrícolas , Refere-se a empresas e startups focadas em desenvolver soluções inovadoras para o agronegócio, unindo ciência, tecnologia e agricultura para modernizar o campo, otimizar processos, elevar a produtividade e promover a sustentabilidade.</p>
+    <simg rc="https://aegro.com.br/images/blog/geradas/agricultura-digital-ferramentas-tendencias-e-desafios-para-o-produtor-rural.webp" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 1920px; height: 217px; margin: 0px; width: 385px;" alt="Agricultura Digital: Ferramentas, Tendências e Desafios Para o Produtor  Rural | Blog da Aegro" jsname="kn3ccd">
   </div>
 </section><section id="ensaios">
   <div class="card">
     <h2>Ensaios Agrícolas</h2>
-    <p>Os ensaios agrícolas são testes realizados no campo para avaliar o desempenho de sementes, fertilizantes, defensivos e técnicas de cultivo.</p>
+    <p>Os ensaios agrícolas são testes realizados no campo para avaliar o desempenho de sementes, fertilizantes, defensivos e técnicas de cultivo,Agrotech (ou Agtech) refere-se à aplicação da revolução digital e de inovações tecnológicas (como inteligência artificial, IoT, big data e drones) na cadeia produtiva agropecuária. O impacto dessas tecnologias na sociedade abrange a eficiência produtiva, a sustentabilidade ambiental, a segurança alimentar global e a adaptação do mercado de trabalho.</p>
+    <img src="https://www.produzindocerto.com.br/wp-content/uploads/2022/01/blog-IG-dicionagro-S17-24-01.jpg" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 1920px; height: 217px; margin: 0px; width: 385px;" alt="O Agro é tech - parte 2 - Produzindo Certo" jsname="kn3ccd">
   </div>  <div class="card">
     <h3>Tipos de Ensaios</h3>
     <ul>
@@ -73,7 +74,8 @@
     </ul>
   </div>  <div class="card">
     <h3>Importância</h3>
-    <p>Esses ensaios ajudam produtores a tomar decisões mais assertivas, aumentando a eficiência da produção e reduzindo riscos.</p>
+    <p>Esses ensaios ajudam produtores a tomar decisões mais assertivas, aumentando a eficiência da produção e reduzindo riscos, As agrotechs são fundamentais para a sociedade moderna ao garantirem a segurança alimentar global e impulsionarem a sustentabilidade. Elas utilizam ferramentas como inteligência artificial, sensores no solo e drones para otimizar os recursos naturais, reduzir desperdícios e baratear os custos de produção no campo.</p>
+    <img src="https://agrotools.com.br/wp-content/uploads/2021/06/agrotools-artigo-agricultura-digital.jpg" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 1500px; height: 154px; margin: 12px 0px; width: 385px;" alt="O que é agricultura digital? Conheça os desafios e tendências!" jsname="kn3ccd">
   </div>
 </section><section id="
 
