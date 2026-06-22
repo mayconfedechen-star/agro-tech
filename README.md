@@ -212,10 +212,6 @@ footer{
     </div>
 </section>
 
-<footer>
-    <p>&copy; 2026 AgroTech - Todos os direitos reservados.</p>
-</footer>
-
 <script>
 function entrar() {
     const usuario = document.getElementById("usuario").value;
