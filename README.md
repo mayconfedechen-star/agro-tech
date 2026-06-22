@@ -77,26 +77,52 @@
     <p>Esses ensaios ajudam produtores a tomar decisões mais assertivas, aumentando a eficiência da produção e reduzindo riscos, As agrotechs são fundamentais para a sociedade moderna ao garantirem a segurança alimentar global e impulsionarem a sustentabilidade. Elas utilizam ferramentas como inteligência artificial, sensores no solo e drones para otimizar os recursos naturais, reduzir desperdícios e baratear os custos de produção no campo.</p>
     <img src="https://agrotools.com.br/wp-content/uploads/2021/06/agrotools-artigo-agricultura-digital.jpg" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 1500px; height: 154px; margin: 12px 0px; width: 385px;" alt="O que é agricultura digital? Conheça os desafios e tendências!" jsname="kn3ccd">
   </div>
-</section><section id="
+<!-- Tela de Login --><div id="loginBox" style="
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#f4f4f4;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:9999;">  <div style="
+  background:white;
+  padding:30px;
+  border-radius:10px;
+  box-shadow:0 0 10px rgba(0,0,0,0.2);
+  text-align:center;
+  width:300px;"><h2>Identificação</h2>
 
- <h1>Inscrição para o Evento</h1>
+<input type="text" id="usuario" placeholder="Usuário"
+style="width:90%;padding:10px;margin:10px 0;">
 
-   <form action="#" method="post">
- <!-- Campo Nome -->
-  <label for="nome">Nome:</label>
-   <input type="text" id="nome" name="nome" placeholder="maycon" required>
+<input type="password" id="senha" placeholder="Senha"
+style="width:90%;padding:10px;margin:10px 0;">
 
-  <!-- Campo E-mail -->
-  <label for="email">E-mail:</label>
-   <input type="email" id="email" name="email" placeholder="mm @may.com" required>
+<button onclick="entrar()"
+style="padding:10px 20px;background:#2e7d32;color:white;border:none;border-radius:5px;cursor:pointer;">
+  Entrar
+</button>
 
-   <!-- Campo Telefone -->
-  <label for="telefone">Telefone:</label>
-  <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXX-XXXX" required>
+<p id="erro" style="color:red;"></p>
 
- <!-- Campo Mensagem -->
-   <label for="mensagem">Mensagem:</label>
-   <textarea id="mensagem" name="mensagem" rows="5" placeholder="oi, eu sou o maycon"></textarea>
+  </div>
+</div><script>
+function entrar() {
+    const usuario = document.getElementById("usuario").value;
+    const senha = document.getElementById("senha").value;
+
+    if(usuario === "admin" && senha === "1234"){
+        document.getElementById("loginBox").style.display = "none";
+    } else {
+        document.getElementById("erro").innerHTML =
+        "Usuário ou senha incorretos!";
+    }
+}
+</script></body>
+</html>
 
 <meta charset="UTF-8">
  <title>Horário de Funcionamento</title>
@@ -118,36 +144,4 @@ background-color: #f2f2f2;
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14511.735202110038!2d-52.28882953307229!3d-24.59148074969135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eddbf8811d649d%3A0x7b5fc5cca0c1b0cb!2sRoncador%2C%20PR%2C%2087320-000!5e0!3m2!1spt-BR!2sbr!4v1781524035088!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </head>
 <body>
-<div id="loginBox" style="
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:#f4f4f4;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    z-index:9999;">
 
-    <div style="
-        background:white;
-        padding:30px;
-        border-radius:10px;
-        box-shadow:0 0 10px rgba(0,0,0,0.2);
-        text-align:center;">
-
-        <h2>Identificação</h2>
-
-        <input type="text" id="usuario" placeholder="Usuário"
-               style="width:90%;padding:10px;margin:10px 0;"><br>
-
-<input type="password" id="senha" placeholder="Senha"
-               style="width:90%;padding:10px;margin:10px 0;"><br>
-
-<button onclick="entrar()"
- style="padding:10px 20px;background:#2e7d32;color:white;border:none;border-radius:5px;">
-  Entrar
-</button>
- </div>
-</div>
