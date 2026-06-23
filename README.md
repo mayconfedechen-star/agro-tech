@@ -130,18 +130,8 @@ footer{
         <button onclick="entrar()">Entrar</button>
 
         <p id="erro"></p>
-    <div class="card">
-    <h3>Importância</h3>
-
-    <p>
-        Esses ensaios ajudam produtores a tomar decisões mais assertivas,
-        aumentando a eficiência da produção e reduzindo riscos.
-    </p>
-
-    <img src="https://agrotools.com.br/wp-content/uploads/2021/06/agrotools-artigo-agricultura-digital.jpg"
-         alt="Agricultura Digital">
+    </div>
 </div>
-
 
 <header>
     <h1>AgroTech</h1>
@@ -193,6 +183,9 @@ footer{
         </ul>
     </div>
 
+    <div class="card">
+        <h3>Importância</h3>
+
         <p>
             Esses ensaios ajudam produtores a tomar decisões mais assertivas,
             aumentando a eficiência da produção e reduzindo riscos.
@@ -219,6 +212,10 @@ footer{
     </div>
 </section>
 
+<footer>
+    <p>&copy; 2026 AgroTech - Todos os direitos reservados.</p>
+</footer>
+
 <script>
 function entrar() {
     const usuario = document.getElementById("usuario").value;
@@ -235,6 +232,3 @@ function entrar() {
 
 </body>
 </html>
-    
-
-
