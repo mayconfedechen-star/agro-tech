@@ -130,8 +130,18 @@ footer{
         <button onclick="entrar()">Entrar</button>
 
         <p id="erro"></p>
-    </div>
+    <div class="card">
+    <h3>Importância</h3>
+
+    <p>
+        Esses ensaios ajudam produtores a tomar decisões mais assertivas,
+        aumentando a eficiência da produção e reduzindo riscos.
+    </p>
+
+    <img src="https://agrotools.com.br/wp-content/uploads/2021/06/agrotools-artigo-agricultura-digital.jpg"
+         alt="Agricultura Digital">
 </div>
+
 
 <header>
     <h1>AgroTech</h1>
