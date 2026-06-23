@@ -182,7 +182,7 @@ footer{
             <li>Ensaios de controle de pragas</li>
         </ul>
     </div>
-
+<img src="https://blog.b2bstack.com.br/wp-content/uploads/2022/11/agrotech-no-brasil.webp" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 640px; height: 226px; margin: 0px; width: 527px;" alt="Agrotech: conheça as startups que trazem tecnologia e inovação para o  agronegócio" jsname="kn3ccd">
     <div class="card">
         <h3>Importância</h3>
 
