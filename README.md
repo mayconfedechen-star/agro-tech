@@ -41,7 +41,7 @@ section{
     padding:15px;
     margin:15px 0;
     border-radius:10px;
-    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+    box-shadow:0 2px 5px rgb(12, 12, 12);
 }
 
 img{
