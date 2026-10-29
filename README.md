@@ -41,7 +41,7 @@ section{
     padding:15px;
     margin:15px 0;
     border-radius:10px;
-    box-shadow:0 2px 5px rgb(12, 12, 12);
+    box-shadow:0 2px 5px rgba(12, 12, 12, 0);
 }
 
 img{
@@ -56,7 +56,7 @@ table{
 }
 
 th,td{
-    border:1px solid #ddd;
+    border:1px solid #000000;
     padding:8px;
     text-align:left;
 }
