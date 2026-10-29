@@ -1,0 +1,394 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boneco 3D Correndo</title>
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #152238;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.cena {
+  position: relative;
+  width: min(100%, 600px);
+  height: 420px;
+  overflow: hidden;
+  perspective: 700px;
+  background: linear-gradient(#8bdcff 0 65%, #a4dd91 65%);
+  border-radius: 18px;
+}
+
+.sol {
+  position: absolute;
+  right: 45px;
+  top: 35px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #ffe58a;
+  box-shadow: 0 0 35px #fff4a6;
+}
+
+.chao {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 90px;
+  background: repeating-linear-gradient(
+    90deg,
+    #6ab75c 0 40px,
+    #8bd27c 40px 80px
+  );
+  animation: terreno .35s linear infinite;
+}
+
+.sombra {
+  position: absolute;
+  width: 110px;
+  height: 18px;
+  left: calc(50% - 55px);
+  bottom: 72px;
+  border-radius: 50%;
+  background: #326b4655;
+  animation: sombra .35s infinite alternate;
+}
+
+.boneco {
+  position: absolute;
+  width: 120px;
+  height: 260px;
+  left: 50%;
+  top: 55px;
+  transform: translateX(-50%);
+  animation: corpo .35s infinite alternate ease-in-out;
+  transform-style: preserve-3d;
+}
+
+/* Cabeça */
+.cabeca {
+  position: absolute;
+  z-index: 5;
+  left: 31px;
+  top: 0;
+  width: 58px;
+  height: 62px;
+  border-radius: 45%;
+  background: linear-gradient(110deg, #ffdda4, #d98b50);
+  box-shadow: inset -8px -3px #0002;
+}
+
+.cabelo {
+  position: absolute;
+  top: -2px;
+  left: 28px;
+  width: 61px;
+  height: 24px;
+  border-radius: 50% 50% 20% 25%;
+  background: #513321;
+  transform: rotate(-8deg);
+  z-index: 6;
+}
+
+.olho {
+  position: absolute;
+  top: 28px;
+  left: 14px;
+  width: 6px;
+  height: 8px;
+  border-radius: 50%;
+  background: #30251e;
+}
+
+.olho.direito { left: 38px; }
+
+.boca {
+  position: absolute;
+  left: 23px;
+  top: 42px;
+  width: 15px;
+  height: 7px;
+  border-bottom: 2px solid #8d3d31;
+  border-radius: 50%;
+}
+
+.pescoco {
+  position: absolute;
+  top: 54px;
+  left: 51px;
+  width: 18px;
+  height: 20px;
+  background: #e9a56b;
+}
+
+/* Tronco */
+.tronco {
+  position: absolute;
+  z-index: 3;
+  left: 25px;
+  top: 67px;
+  width: 70px;
+  height: 83px;
+  border-radius: 22px 22px 15px 15px;
+  background: linear-gradient(100deg, #ff704c, #d9382b 72%, #a92424);
+  box-shadow: inset 8px 0 #ffffff25, inset -7px 0 #0002;
+}
+
+.faixa {
+  position: absolute;
+  left: 30px;
+  top: 5px;
+  height: 67px;
+  width: 7px;
+  border-radius: 8px;
+  background: #ffd34d;
+  transform: rotate(-8deg);
+}
+
+/* Braços */
+.braco {
+  position: absolute;
+  z-index: 2;
+  top: 74px;
+  left: 24px;
+  width: 23px;
+  height: 70px;
+  transform-origin: 50% 12px;
+}
+
+.braco.esquerdo {
+  animation: bracoA .35s infinite alternate ease-in-out;
+}
+
+.braco.direito {
+  left: 76px;
+  animation: bracoB .35s infinite alternate ease-in-out;
+}
+
+.braco .parte {
+  width: 21px;
+  height: 39px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #e95439, #a92b24);
+}
+
+.braco .antebraco {
+  position: absolute;
+  top: 31px;
+  left: 1px;
+  width: 19px;
+  height: 34px;
+  border-radius: 11px;
+  background: linear-gradient(90deg, #ffce8d, #db9555);
+  transform: rotate(-24deg);
+  transform-origin: top;
+}
+
+.mao {
+  position: absolute;
+  bottom: -3px;
+  left: -2px;
+  width: 23px;
+  height: 23px;
+  border-radius: 45%;
+  background: #f1b574;
+}
+
+/* Pernas */
+.perna {
+  position: absolute;
+  z-index: 2;
+  top: 138px;
+  left: 35px;
+  width: 27px;
+  height: 75px;
+  transform-origin: 50% 8px;
+}
+
+.perna.esquerda {
+  animation: pernaA .35s infinite alternate ease-in-out;
+}
+
+.perna.direita {
+  left: 62px;
+  animation: pernaB .35s infinite alternate ease-in-out;
+}
+
+.coxa {
+  width: 26px;
+  height: 40px;
+  border-radius: 11px;
+  background: linear-gradient(90deg, #354fbb, #21358c);
+}
+
+.canela {
+  position: absolute;
+  top: 32px;
+  left: 3px;
+  width: 21px;
+  height: 37px;
+  border-radius: 9px;
+  background: linear-gradient(90deg, #456be5, #263c9b);
+  transform: rotate(35deg);
+  transform-origin: top;
+}
+
+.sapato {
+  position: absolute;
+  bottom: -4px;
+  left: -8px;
+  width: 36px;
+  height: 16px;
+  border-radius: 10px 15px 5px 7px;
+  background: linear-gradient(white, #d8e7ff);
+  border-bottom: 4px solid #7e91b5;
+}
+
+.legenda {
+  position: absolute;
+  bottom: 12px;
+  width: 100%;
+  text-align: center;
+  color: #245a32;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+/* Animações */
+@keyframes corpo {
+  from { translate: 0 0; rotate: -3deg; }
+  to   { translate: 0 -13px; rotate: 3deg; }
+}
+
+@keyframes bracoA {
+  from { transform: rotate(48deg); }
+  to   { transform: rotate(-62deg); }
+}
+
+@keyframes bracoB {
+  from { transform: rotate(-62deg); }
+  to   { transform: rotate(48deg); }
+}
+
+@keyframes pernaA {
+  from { transform: rotate(-48deg); }
+  to   { transform: rotate(48deg); }
+}
+
+@keyframes pernaB {
+  from { transform: rotate(48deg); }
+  to   { transform: rotate(-48deg); }
+}
+
+@keyframes sombra {
+  to { transform: scaleX(.7); opacity: .5; }
+}
+
+@keyframes terreno {
+  to { background-position: -80px 0; }
+}
+
+.pausado * {
+  animation-play-state: paused !important;
+}
+
+.controles {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 10;
+}
+
+button {
+  padding: 9px 14px;
+  border: 0;
+  border-radius: 9px;
+  cursor: pointer;
+  font-weight: bold;
+  background: white;
+  color: #152238;
+}
+</style>
+</head>
+
+<body>
+<div>
+  <div class="cena" id="cena">
+    <div class="sol"></div>
+    <div class="sombra"></div>
+
+    <div class="boneco">
+      <div class="cabelo"></div>
+
+      <div class="cabeca">
+        <div class="olho"></div>
+        <div class="olho direito"></div>
+        <div class="boca"></div>
+      </div>
+
+      <div class="pescoco"></div>
+
+      <div class="tronco">
+        <div class="faixa"></div>
+      </div>
+
+      <div class="braco esquerdo">
+        <div class="parte"></div>
+        <div class="antebraco">
+          <div class="mao"></div>
+        </div>
+      </div>
+
+      <div class="braco direito">
+        <div class="parte"></div>
+        <div class="antebraco">
+          <div class="mao"></div>
+        </div>
+      </div>
+
+      <div class="perna esquerda">
+        <div class="coxa"></div>
+        <div class="canela">
+          <div class="sapato"></div>
+        </div>
+      </div>
+
+      <div class="perna direita">
+        <div class="coxa"></div>
+        <div class="canela">
+          <div class="sapato"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="chao"></div>
+    <div class="legenda">BONECO CORRENDO</div>
+
+    <div class="controles">
+      <button id="botao">Pausar</button>
+    </div>
+  </div>
+  <p style="text-align:center">Boneco 3D estilizado — animação em CSS</p>
+</div>
+
+<script>
+const cena = document.getElementById("cena");
+const botao = document.getElementById("botao");
+
+botao.addEventListener("click", () => {
+  const pausado = cena.classList.toggle("pausado");
+  botao.textContent = pausado ? "Continuar" : "Pausar";
+});
+</script>
+</body>
+</html>
